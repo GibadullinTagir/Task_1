@@ -1,0 +1,8 @@
+.component_round-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0px;
+    background: none;
+    border: none;
+}
