@@ -34,17 +34,23 @@ body , html {
     align-items: center;
 }
 
-.left-side__decor-line {
-    width: 2px;
-    height: 32px;
-    border-radius: 1px;
-    background-color: #EAEAEA;
+.nav__contener-btn-768px {
+    display: none;
+}
+
+.nav__decor-line {
+    display: none;
 }
 
 .header__nav {
     width: 96px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.left-side__decor-line {
+    order: 1;
 }
 
 .main-content__topic {
@@ -79,7 +85,7 @@ body , html {
 }
 
 .main-content__menu::-webkit-scrollbar {
-    width: 0px;
+    display: none;
 } 
 
 .menu__link {
@@ -98,4 +104,128 @@ body , html {
 .menu__link:hover {
     border-color: #B8FFEC;
     background-color: #FFFFFF;
+}
+
+.main-content__information {
+    flex-direction: column;
+}
+
+.information__left-side {
+    flex-direction: column;
+}
+
+.left-side__text {
+    margin: 0px 0px 24px 0px;
+    padding: 0px 16px 0px 16px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    font-family: TTLakes;
+    color: #1B1C21;
+}
+
+.text__span-768px {
+    display: none;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    font-family: TTLakes;
+    color: #1B1C21;
+}
+
+.left-side__contener-btn {
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 24px 24px;
+}
+
+.contener-btn__lable-for-btn {
+    background-image: url(/img/read-more-ico/icon.svg);
+    width: 8px;
+    height: 11px;
+    box-sizing: border-box;
+}
+
+.contener-btn__btn-read-more {
+    font-family: TTLakes-Bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    margin-left: 16px;
+}
+
+.right-side__img {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 321px) and (max-width:768px) {
+    body , html {
+        max-width: 768px;
+    }
+
+    .header {
+        padding: 24px;
+    }
+
+    .header__left-side {
+        width: 179.28px;
+    }
+
+    .left-side__decor-line {
+        order: 0;
+    }
+
+    .header__nav {
+        width: 290px;
+        min-width: 200px;
+    }
+
+    .nav__contener-btn-768px {
+        width: 152px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav__decor-line {
+        display: flex;
+        margin: 0px 4px 0px 4px;
+    }
+
+    .main-content__information {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 25px;
+        margin-left: 24px;
+    }
+
+    .menu__link {
+        margin-right: 14px;
+    }
+
+    .information-right-side {
+        width: 360px;
+        height: 208px;
+    }
+
+    .left-side__text {
+        padding: 0;
+    }
+
+    .text__span-768px {
+        display: block;
+    }
+
+    .right-side__img {
+        border-radius: 6px;
+    }
+
+    .information__left-side {
+        width: 312px;
+    }
 }
