@@ -13,12 +13,12 @@ body , html {
 
 @font-face {
     font-family: TTLakes-Bold;
-    src: url(/fonts/TTlakes/TTLakes-Bold.woff);
+    src: url(../fonts/TTlakes/TTLakes-Bold.woff);
 }
 
 @font-face {
     font-family: TT Lakes-Medium;
-    src: url(/fonts/TTlakes/TTLakesCondensed-Medium.woff);
+    src: url(../fonts/TTlakes/TTLakesCondensed-Medium.woff);
 }
 
 .header {
@@ -168,7 +168,7 @@ body , html {
 }
 
 .contener-btn__lable-for-btn {
-    background-image: url(/img/read-more-ico/icon.svg);
+    background-image: url(../img/read-more-ico/icon.svg);
     width: 8px;
     height: 11px;
     box-sizing: border-box;
@@ -265,7 +265,7 @@ body , html {
 @media (min-width:769px) {
     body , html {
         min-width: 769px;
-        max-width: 1120px;
+        max-width: 100%;
     }
 
     .header {
@@ -292,10 +292,10 @@ body , html {
         margin-right: 32px;
     }
 
-    .conteiner-btn-1120px__btn-repair ,
-    .conteiner-btn-1120px__btn-checkstatus{
+    .topic__conteiner-btn-1120px .conteiner-btn-1120px__btn-repair ,
+    .topic__conteiner-btn-1120px .conteiner-btn-1120px__btn-checkstatus{
         align-items: center;
-        width: 173px !important;
+        width: 173px ;
     }
 
     .conteiner-btn-1120px__btn-repair::before {
